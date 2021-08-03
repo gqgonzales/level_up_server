@@ -1,0 +1,26 @@
+[
+  {
+    "model": "levelupapi.game",
+    "pk": 1,
+    "fields": {
+      "name": "Candy Land",
+      "game_type": 1,
+      "description": "Travel through a deliciously sweet adventure with up to 4 friends!",
+      "number_of_players": 4,
+      "gamer": 1,
+      "maker": "Hasbro"
+    }
+  },
+  {
+    "model": "levelupapi.game",
+    "pk": 2,
+    "fields": {
+      "name": "Blitzball",
+      "game_type": 3,
+      "description": "Waterpolo without any proper physics",
+      "number_of_players": 16,
+      "gamer": 1,
+      "maker": "Square"
+    }
+  }
+]
