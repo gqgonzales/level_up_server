@@ -8,7 +8,7 @@ class Game(models.Model):
     number_of_players = models.IntegerField()
     gamer = models.ForeignKey("Gamer", on_delete=models.CASCADE)
     maker = models.TextField()
+    skill_level = models.IntegerField()
 
-
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name

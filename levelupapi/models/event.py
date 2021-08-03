@@ -11,6 +11,5 @@ class Event(models.Model):
     attendees = models.ManyToManyField(
         "Gamer", through="EventGamer", related_name="attending")
 
-
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
