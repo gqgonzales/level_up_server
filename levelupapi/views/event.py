@@ -107,18 +107,6 @@ class EventView(ViewSet):
         return Response(serializer.data)
 
 
-class EventSerializer(serializers.ModelSerializer):
-    """JSON serializer for events"""
-    # COMMENT OUT LINE BELOW TO VIEW EVENTS IN POSTMAN
-    host = EventGamerSerializer(many=False)
-    game = GameSerializer(many=False)
-
-    class Meta:
-        model = Event
-        fields = ('id', 'game', 'host',
-                  'description', 'date', 'time')
-
-
 class EventUserSerializer(serializers.ModelSerializer):
     """JSON serializer for event host's related Django user"""
     class Meta:
@@ -140,3 +128,15 @@ class GameSerializer(serializers.ModelSerializer):
     class Meta:
         model = Game
         fields = ('id', 'name', 'maker', 'number_of_players', 'skill_level')
+
+
+class EventSerializer(serializers.ModelSerializer):
+    """JSON serializer for events"""
+    # COMMENT OUT LINE BELOW TO VIEW EVENTS IN POSTMAN
+    host = EventGamerSerializer(many=False)
+    game = GameSerializer(many=False)
+
+    class Meta:
+        model = Event
+        fields = ('id', 'game', 'host',
+                  'description', 'date', 'time')

@@ -11,5 +11,5 @@ class Event(models.Model):
     attendees = models.ManyToManyField(
         "Gamer", through="EventGamer", related_name="attending")
 
-    def __str__(self):
-        return self.title
+    def __str__(self) -> str:
+        return f'{self.game.name} on {self.date} hosted by {self.host}'

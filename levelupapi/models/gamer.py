@@ -8,4 +8,4 @@ class Gamer(models.Model):
     bio = models.CharField(max_length=50)
 
     def __str__(self):
-        return self.name
+        return self.user.get_full_name()
