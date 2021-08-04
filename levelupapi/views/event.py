@@ -28,7 +28,7 @@ class EventView(ViewSet):
         event.description = request.data["description"]
         event.host = gamer
 
-        game = Game.objects.get(pk=request.data["gameId"])
+        game = Game.objects.get(pk=request.data["game_id"])
         event.game = game
 
         try:
@@ -65,7 +65,7 @@ class EventView(ViewSet):
         event.time = request.data["time"]
         event.host = host
 
-        game = Game.objects.get(pk=request.data["gameId"])
+        game = Game.objects.get(pk=request.data["game_id"])
         event.game = game
         event.save()
 
@@ -98,7 +98,7 @@ class EventView(ViewSet):
         events = Event.objects.all()
 
         # Support filtering events by game
-        game = self.request.query_params.get('gameId', None)
+        game = self.request.query_params.get('game_id', None)
         if game is not None:
             events = events.filter(game__id=game)
 
