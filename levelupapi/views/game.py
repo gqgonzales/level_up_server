@@ -132,6 +132,7 @@ class GameView(ViewSet):
         game_type = self.request.query_params.get('type', None)
         if game_type is not None:
             games = games.filter(game_type__id=game_type)
+        #  This dunderscored id is acting kind of like a join table WHERE statement
 
         serializer = GameSerializer(
             games, many=True, context={'request': request})
@@ -151,3 +152,4 @@ class GameSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'maker', 'description', 'number_of_players',
                   'skill_level', 'game_type')
         depth = 1
+        #  Works like EXPAND from JSON Server, exposing a certain number of fields
