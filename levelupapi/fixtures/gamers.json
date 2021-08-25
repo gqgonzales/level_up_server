@@ -6,5 +6,21 @@
       "user": 1,
       "bio": "Head Wizard at Nashville Software School"
     }
+  },
+  {
+    "model": "levelupapi.gamer",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "bio": "Likes: Citrus, rock climbing, dogs in sombreros. Dislikes: Snakes, when your seatbelt catches because you pull it forward too quickly, and front end development."
+    }
+  },
+  {
+    "model": "levelupapi.gamer",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "bio": "Creator of this website!"
+    }
   }
 ]
