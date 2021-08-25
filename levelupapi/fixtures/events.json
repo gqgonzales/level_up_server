@@ -20,29 +20,7 @@
       "title": "Blitzball WC QF",
       "date": "2021-09-01",
       "time": "14:00",
-      "description": "Hope thtey beef up security for this one..."
-    }
-  },
-  {
-    "model": "levelupapi.event",
-    "pk": 1,
-    "fields": {
-      "host": 1,
-      "description": "Welcome To at lunch",
-      "game": 1,
-      "date": "2021-10-04",
-      "time": "12:00"
-    }
-  },
-  {
-    "model": "levelupapi.event",
-    "pk": 2,
-    "fields": {
-      "host": 1,
-      "description": "Friday night Settlers and drinks",
-      "game": 2,
-      "date": "2021-08-14",
-      "time": "19:30"
+      "description": "Hope they beef up security for this one..."
     }
   },
   {
@@ -50,10 +28,23 @@
     "pk": 3,
     "fields": {
       "host": 1,
-      "description": "Vale of the Frost King campaign. All weekend.",
+      "game": 5,
+      "title": "Total Annihilation",
+      "date": "2021-08-30",
+      "time": "16:00",
+      "description": "What could possibly go wrong?"
+    }
+  },
+  {
+    "model": "levelupapi.event",
+    "pk": 4,
+    "fields": {
+      "host": 1,
       "game": 3,
-      "date": "2021-04-20",
-      "time": "8:00"
+      "title": "Chooo Chooooo",
+      "date": "2021-09-07",
+      "time": "21:00",
+      "description": "Late night ticket to riiiiiide"
     }
   }
 ]

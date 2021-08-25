@@ -6,13 +6,5 @@
       "user": 1,
       "bio": "Head Wizard at Nashville Software School"
     }
-  },
-  {
-    "model": "levelupapi.gamer",
-    "pk": 2,
-    "fields": {
-      "user": 2,
-      "bio": "Outgoing and funny. Always have the best interests of other at heart."
-    }
   }
 ]
