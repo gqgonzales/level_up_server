@@ -7,11 +7,12 @@
   </head>
   <body>
     <h1>User Events</h1>
+    <h3>Specifically, events that a user is hosting/created</h3>
 
     {% for user in userevent_list %}
     <h2>{{ user.full_name }}</h2>
     <ol>
-      {% for event in user.Events %}
+      {% for event in user.events %}
       <li>Title: {{ event.title }}</li>
       {% endfor %}
     </ol>
