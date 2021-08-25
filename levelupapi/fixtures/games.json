@@ -29,9 +29,9 @@
     "model": "levelupapi.game",
     "pk": 3,
     "fields": {
-      "name": "Welcome To",
-      "maker": "Benoit Turpin",
-      "description": "A sample description",
+      "name": "Ticket To Ride",
+      "maker": "Hasbro",
+      "description": "All aboard!",
       "gamer": 1,
       "game_type": 1,
       "number_of_players": 4,
